@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC8D76A6273CCF350032FE04 /* TimerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D76A5273CCF350032FE04 /* TimerViewTests.swift */; };
+		EC8D76A8273CCFA90032FE04 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D76A7273CCFA90032FE04 /* BaseViewController.swift */; };
+		EC8D76AA273CD0E50032FE04 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D76A9273CD0E50032FE04 /* TimerView.swift */; };
+		EC8D76AC273CD7E60032FE04 /* TimerViewComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D76AB273CD7E60032FE04 /* TimerViewComposer.swift */; };
 		EC9D3B72272CB09300A1770D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D3B71272CB09300A1770D /* AppDelegate.swift */; };
 		EC9D3B74272CB09300A1770D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D3B73272CB09300A1770D /* SceneDelegate.swift */; };
 		EC9D3B7B272CB09400A1770D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC9D3B7A272CB09400A1770D /* Assets.xcassets */; };
 		EC9D3B7E272CB09400A1770D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9D3B7C272CB09400A1770D /* LaunchScreen.storyboard */; };
-		EC9D3B89272CB09500A1770D /* NapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D3B88272CB09500A1770D /* NapTests.swift */; };
-		EC9D3B93272CB09500A1770D /* NapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D3B92272CB09500A1770D /* NapUITests.swift */; };
-		EC9D3B95272CB09500A1770D /* NapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D3B94272CB09500A1770D /* NapUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC8D76A5273CCF350032FE04 /* TimerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewTests.swift; sourceTree = "<group>"; };
+		EC8D76A7273CCFA90032FE04 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EC8D76A9273CD0E50032FE04 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		EC8D76AB273CD7E60032FE04 /* TimerViewComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewComposer.swift; sourceTree = "<group>"; };
 		EC9D3B6E272CB09300A1770D /* Nap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9D3B71272CB09300A1770D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC9D3B73272CB09300A1770D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,10 +46,7 @@
 		EC9D3B7D272CB09400A1770D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC9D3B7F272CB09400A1770D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC9D3B84272CB09500A1770D /* NapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC9D3B88272CB09500A1770D /* NapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NapTests.swift; sourceTree = "<group>"; };
 		EC9D3B8E272CB09500A1770D /* NapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC9D3B92272CB09500A1770D /* NapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NapUITests.swift; sourceTree = "<group>"; };
-		EC9D3B94272CB09500A1770D /* NapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NapUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +82,18 @@
 				EC9D3B7A272CB09400A1770D /* Assets.xcassets */,
 				EC9D3B7C272CB09400A1770D /* LaunchScreen.storyboard */,
 				EC9D3B7F272CB09400A1770D /* Info.plist */,
+				EC8D76A7273CCFA90032FE04 /* BaseViewController.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		EC8D769F273CCA6B0032FE04 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EC8D76A9273CD0E50032FE04 /* TimerView.swift */,
+				EC8D76AB273CD7E60032FE04 /* TimerViewComposer.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		EC9D3B65272CB09300A1770D = {
@@ -89,7 +101,6 @@
 			children = (
 				EC9D3B70272CB09300A1770D /* Nap */,
 				EC9D3B87272CB09500A1770D /* NapTests */,
-				EC9D3B91272CB09500A1770D /* NapUITests */,
 				EC9D3B6F272CB09300A1770D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				EC8D769E273CBB4C0032FE04 /* Application */,
+				EC8D769F273CCA6B0032FE04 /* Scenes */,
 			);
 			path = Nap;
 			sourceTree = "<group>";
@@ -115,18 +127,9 @@
 		EC9D3B87272CB09500A1770D /* NapTests */ = {
 			isa = PBXGroup;
 			children = (
-				EC9D3B88272CB09500A1770D /* NapTests.swift */,
+				EC8D76A5273CCF350032FE04 /* TimerViewTests.swift */,
 			);
 			path = NapTests;
-			sourceTree = "<group>";
-		};
-		EC9D3B91272CB09500A1770D /* NapUITests */ = {
-			isa = PBXGroup;
-			children = (
-				EC9D3B92272CB09500A1770D /* NapUITests.swift */,
-				EC9D3B94272CB09500A1770D /* NapUITestsLaunchTests.swift */,
-			);
-			path = NapUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +203,7 @@
 					};
 					EC9D3B83272CB09500A1770D = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 						TestTargetID = EC9D3B6D272CB09300A1770D;
 					};
 					EC9D3B8D272CB09500A1770D = {
@@ -261,6 +265,9 @@
 			files = (
 				EC9D3B72272CB09300A1770D /* AppDelegate.swift in Sources */,
 				EC9D3B74272CB09300A1770D /* SceneDelegate.swift in Sources */,
+				EC8D76AA273CD0E50032FE04 /* TimerView.swift in Sources */,
+				EC8D76AC273CD7E60032FE04 /* TimerViewComposer.swift in Sources */,
+				EC8D76A8273CCFA90032FE04 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9D3B89272CB09500A1770D /* NapTests.swift in Sources */,
+				EC8D76A6273CCF350032FE04 /* TimerViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +283,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9D3B95272CB09500A1770D /* NapUITestsLaunchTests.swift in Sources */,
-				EC9D3B93272CB09500A1770D /* NapUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +490,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AR7T5G5Z83;
@@ -499,6 +505,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lucaswkuipers.NapTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "NapTests/NapTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nap.app/Nap";
@@ -510,6 +518,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AR7T5G5Z83;
@@ -524,6 +533,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lucaswkuipers.NapTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "NapTests/NapTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nap.app/Nap";
