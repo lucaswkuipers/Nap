@@ -72,6 +72,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC8D769E273CBB4C0032FE04 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EC9D3B71272CB09300A1770D /* AppDelegate.swift */,
+				EC9D3B73272CB09300A1770D /* SceneDelegate.swift */,
+				EC9D3B7A272CB09400A1770D /* Assets.xcassets */,
+				EC9D3B7C272CB09400A1770D /* LaunchScreen.storyboard */,
+				EC9D3B7F272CB09400A1770D /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		EC9D3B65272CB09300A1770D = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +107,7 @@
 		EC9D3B70272CB09300A1770D /* Nap */ = {
 			isa = PBXGroup;
 			children = (
-				EC9D3B71272CB09300A1770D /* AppDelegate.swift */,
-				EC9D3B73272CB09300A1770D /* SceneDelegate.swift */,
-				EC9D3B7A272CB09400A1770D /* Assets.xcassets */,
-				EC9D3B7C272CB09400A1770D /* LaunchScreen.storyboard */,
-				EC9D3B7F272CB09400A1770D /* Info.plist */,
+				EC8D769E273CBB4C0032FE04 /* Application */,
 			);
 			path = Nap;
 			sourceTree = "<group>";
@@ -425,7 +433,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AR7T5G5Z83;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Nap/Info.plist;
+				INFOPLIST_FILE = Nap/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -453,7 +461,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AR7T5G5Z83;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Nap/Info.plist;
+				INFOPLIST_FILE = Nap/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

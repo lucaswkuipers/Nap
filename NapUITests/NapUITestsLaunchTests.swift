@@ -1,10 +1,3 @@
-//
-//  NapUITestsLaunchTests.swift
-//  NapUITests
-//
-//  Created by Lucas Kuipers on 29/10/21.
-//
-
 import XCTest
 
 class NapUITestsLaunchTests: XCTestCase {
