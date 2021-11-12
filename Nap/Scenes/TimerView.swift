@@ -1,12 +1,33 @@
 import UIKit
 
+final class TimerButton: UIButton {
+    override var isHighlighted: Bool {
+        didSet {
+            backgroundColor = isHighlighted ? .secondaryLabel : .tertiaryLabel
+        }
+    }
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+
+        alpha = 0.8
+        titleLabel?.font = .systemFont(ofSize: 40)
+        layer.cornerRadius = 20
+        backgroundColor = .tertiaryLabel
+        setTitleColor(.label, for: .normal)
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+}
+
 final class TimerView: UIView {
     let verticalStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
-        stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.backgroundColor = .systemBackground
+        stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
 
@@ -31,6 +52,30 @@ final class TimerView: UIView {
         return label
     }()
 
+    let buttonStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .horizontal
+        stackView.distribution = .fillEqually
+        stackView.spacing = 10
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
+    }()
+
+    let playButton: TimerButton = {
+        let button = TimerButton()
+        button.setTitle("Play", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+
+    let resetButton: TimerButton = {
+        let button = TimerButton()
+        button.setTitle("Reset", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+
+
     override init(frame: CGRect) {
         super.init(frame: frame)
 
@@ -44,9 +89,12 @@ final class TimerView: UIView {
 
     private func setupViewHierarchy() {
         addSubview(verticalStackView)
-        topContainerView.addSubview(timeLabel)
         verticalStackView.addArrangedSubview(topContainerView)
         verticalStackView.addArrangedSubview(bottomContainerView)
+        topContainerView.addSubview(timeLabel)
+        bottomContainerView.addSubview(buttonStackView)
+        buttonStackView.addArrangedSubview(playButton)
+        buttonStackView.addArrangedSubview(resetButton)
     }
 
     private func setupConstraints() {
@@ -57,7 +105,12 @@ final class TimerView: UIView {
             verticalStackView.rightAnchor.constraint(equalTo: rightAnchor),
 
             timeLabel.centerXAnchor.constraint(equalTo: topContainerView.centerXAnchor),
-            timeLabel.centerYAnchor.constraint(equalTo: topContainerView.centerYAnchor)
+            timeLabel.centerYAnchor.constraint(equalTo: topContainerView.centerYAnchor),
+
+            buttonStackView.leftAnchor.constraint(equalTo: bottomContainerView.leftAnchor, constant: 20),
+            buttonStackView.rightAnchor.constraint(equalTo: bottomContainerView.rightAnchor, constant: -20),
+            buttonStackView.centerYAnchor.constraint(equalTo: bottomContainerView.centerYAnchor),
+            buttonStackView.heightAnchor.constraint(equalToConstant: 60)
         ])
     }
 }
