@@ -15,6 +15,7 @@
 		EC9D3B74272CB09300A1770D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D3B73272CB09300A1770D /* SceneDelegate.swift */; };
 		EC9D3B7B272CB09400A1770D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC9D3B7A272CB09400A1770D /* Assets.xcassets */; };
 		EC9D3B7E272CB09400A1770D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9D3B7C272CB09400A1770D /* LaunchScreen.storyboard */; };
+		ECB6BCDB273DF77A004B5E4C /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB6BCDA273DF77A004B5E4C /* TimerButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		EC9D3B7F272CB09400A1770D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC9D3B84272CB09500A1770D /* NapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9D3B8E272CB09500A1770D /* NapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECB6BCDA273DF77A004B5E4C /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				EC8D76A9273CD0E50032FE04 /* TimerView.swift */,
 				EC8D76AB273CD7E60032FE04 /* TimerViewComposer.swift */,
+				ECB6BCDA273DF77A004B5E4C /* TimerButton.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				EC9D3B72272CB09300A1770D /* AppDelegate.swift in Sources */,
 				EC9D3B74272CB09300A1770D /* SceneDelegate.swift in Sources */,
 				EC8D76AA273CD0E50032FE04 /* TimerView.swift in Sources */,
+				ECB6BCDB273DF77A004B5E4C /* TimerButton.swift in Sources */,
 				EC8D76AC273CD7E60032FE04 /* TimerViewComposer.swift in Sources */,
 				EC8D76A8273CCFA90032FE04 /* BaseViewController.swift in Sources */,
 			);
