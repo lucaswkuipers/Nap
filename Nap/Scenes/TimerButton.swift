@@ -15,6 +15,7 @@ final class TimerButton: UIButton {
         layer.cornerRadius = 20
         backgroundColor = .tertiaryLabel
         setTitleColor(.label, for: .normal)
+        setTitleColor(.gray, for: .disabled)
     }
 
     required init?(coder: NSCoder) {

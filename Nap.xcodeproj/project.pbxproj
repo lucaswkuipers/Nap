@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC74A5292750A88400561DC5 /* empty.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC74A5282750A88400561DC5 /* empty.wav */; };
+		EC85CADF274F4FE30026E6D8 /* early_riser.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC85CADE274F4FE30026E6D8 /* early_riser.mp3 */; };
+		EC85CAE7274F50EE0026E6D8 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC85CAE6274F50EE0026E6D8 /* SoundManager.swift */; };
 		EC8D76A6273CCF350032FE04 /* TimerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D76A5273CCF350032FE04 /* TimerViewTests.swift */; };
 		EC8D76A8273CCFA90032FE04 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D76A7273CCFA90032FE04 /* BaseViewController.swift */; };
 		EC8D76AA273CD0E50032FE04 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D76A9273CD0E50032FE04 /* TimerView.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC74A5282750A88400561DC5 /* empty.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = empty.wav; sourceTree = "<group>"; };
+		EC85CADE274F4FE30026E6D8 /* early_riser.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = early_riser.mp3; sourceTree = "<group>"; };
+		EC85CAE6274F50EE0026E6D8 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		EC8D76A5273CCF350032FE04 /* TimerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewTests.swift; sourceTree = "<group>"; };
 		EC8D76A7273CCFA90032FE04 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EC8D76A9273CD0E50032FE04 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
@@ -76,15 +82,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EC8D769E273CBB4C0032FE04 /* Application */ = {
+		EC85CAE0274F4FEB0026E6D8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EC74A5282750A88400561DC5 /* empty.wav */,
+				EC85CADE274F4FE30026E6D8 /* early_riser.mp3 */,
+				EC9D3B7A272CB09400A1770D /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		EC85CAE3274F506C0026E6D8 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
 				EC9D3B71272CB09300A1770D /* AppDelegate.swift */,
 				EC9D3B73272CB09300A1770D /* SceneDelegate.swift */,
-				EC9D3B7A272CB09400A1770D /* Assets.xcassets */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		EC85CAE4274F50860026E6D8 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				EC8D76A7273CCFA90032FE04 /* BaseViewController.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		EC85CAE5274F50CF0026E6D8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EC85CAE6274F50EE0026E6D8 /* SoundManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EC8D769E273CBB4C0032FE04 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EC85CAE0274F4FEB0026E6D8 /* Assets */,
+				EC85CAE3274F506C0026E6D8 /* Delegate */,
+				EC85CAE4274F50860026E6D8 /* Reusable */,
+				EC85CAE5274F50CF0026E6D8 /* Service */,
 				EC9D3B7C272CB09400A1770D /* LaunchScreen.storyboard */,
 				EC9D3B7F272CB09400A1770D /* Info.plist */,
-				EC8D76A7273CCFA90032FE04 /* BaseViewController.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -240,7 +281,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC85CADF274F4FE30026E6D8 /* early_riser.mp3 in Resources */,
 				EC9D3B7E272CB09400A1770D /* LaunchScreen.storyboard in Resources */,
+				EC74A5292750A88400561DC5 /* empty.wav in Resources */,
 				EC9D3B7B272CB09400A1770D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +311,7 @@
 			files = (
 				EC9D3B72272CB09300A1770D /* AppDelegate.swift in Sources */,
 				EC9D3B74272CB09300A1770D /* SceneDelegate.swift in Sources */,
+				EC85CAE7274F50EE0026E6D8 /* SoundManager.swift in Sources */,
 				EC8D76AA273CD0E50032FE04 /* TimerView.swift in Sources */,
 				ECB6BCDB273DF77A004B5E4C /* TimerButton.swift in Sources */,
 				EC8D76AC273CD7E60032FE04 /* TimerViewComposer.swift in Sources */,
